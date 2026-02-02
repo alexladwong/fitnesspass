@@ -68,7 +68,6 @@ Before diving into the code, you'll need accounts with these services.
 | **Mapbox** | Address Autocomplete | [Sign up for Mapbox](https://account.mapbox.com/) |
 | **Vercel** | Hosting & AI Gateway | [Sign up for Vercel](https://vercel.com/) |
 
-> 📦 **Want the source code?** [Get it here](https://www..com/class-booking-platform-build-form)
 
 **Why use these links?**
 - ✅ Same pricing as going direct (no extra cost to you)
@@ -128,7 +127,7 @@ All plans include a **3-day free trial** — no commitment, cancel anytime.
 
 > "I went from zero to landing my first dev job in 6 months following Sonny's tutorials!" - alexladwong Graduate
 
-👉 **[Join the alexladwong Course](https://www..com/course)**
+👉 **[Join the alexladwong Course](https://ladwongportfolio.vercel.app/contact)**
 
 ---
 
