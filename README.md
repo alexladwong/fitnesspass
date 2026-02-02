@@ -64,7 +64,7 @@ Before diving into the code, you'll need accounts with these services.
 | Service | What It's For | Sign Up Link |
 |---------|---------------|--------------|
 | **Clerk** | Authentication & Billing | [👉 Sign up for Clerk](https://go.clerk.com/84o4rVF) |
-| **Sanity** | Content Management (CMS) | [👉 Sign up for Sanity](https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) |
+| **Sanity** | Content Management (CMS) | [👉 Sign up for Sanity](https://www.sanity.io/ladwongalex?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) |
 | **Mapbox** | Address Autocomplete | [Sign up for Mapbox](https://account.mapbox.com/) |
 | **Vercel** | Hosting & AI Gateway | [Sign up for Vercel](https://vercel.com/) |
 
@@ -125,7 +125,7 @@ All plans include a **3-day free trial** — no commitment, cancel anytime.
 
 ### Real Results
 
-> "I went from zero to landing my first dev job in 6 months following Sonny's tutorials!" - alexladwong Graduate
+> "I went from zero to landing my first dev job in 6 months following alexladwong tutorials!" - alexladwong Graduate
 
 👉 **[Join the alexladwong Course](https://ladwongportfolio.vercel.app/contact)**
 
@@ -224,7 +224,7 @@ flowchart TD
 Before you begin, make sure you have:
 
 - Account with 💛 [Clerk](https://go.clerk.com/84o4rVF) 💛 (Authentication & Billing)
-- Account with 💛 [Sanity](https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) 💛 (Content Management)
+- Account with 💛 [Sanity](https://www.sanity.io/ladwongalex?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) 💛 (Content Management)
 
 > 💛 = Affiliate link — using these helps me create more free educational content like this!
 
@@ -290,8 +290,8 @@ Create a `.env.local` file with these variables:
 |----------|-------------|--------------|
 | `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk public key for client-side auth | [Clerk Dashboard](https://go.clerk.com/84o4rVF) 💛 > API Keys |
 | `CLERK_SECRET_KEY` | Clerk secret key for server-side auth | [Clerk Dashboard](https://go.clerk.com/84o4rVF) 💛 > API Keys |
-| `NEXT_PUBLIC_SANITY_PROJECT_ID` | Your Sanity project ID | [Sanity Manage](https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) 💛 |
-| `NEXT_PUBLIC_SANITY_DATASET` | Dataset name (e.g., "production") | [Sanity Manage](https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) 💛 |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` | Your Sanity project ID | [Sanity Manage](https://www.sanity.io/ladwongalex?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) 💛 |
+| `NEXT_PUBLIC_SANITY_DATASET` | Dataset name (e.g., "production") | [Sanity Manage](https://www.sanity.io/ladwongalex?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) 💛 |
 | `NEXT_PUBLIC_SANITY_API_VERSION` | API version (e.g., "2024-01-01") | Use current date |
 | `SANITY_API_TOKEN` | Write token for mutations | Sanity > API > Tokens > Add Token (Editor) |
 | `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` | Mapbox public access token | [Mapbox Account](https://account.mapbox.com/) > Tokens |
@@ -575,10 +575,10 @@ See [LICENSE.md](LICENSE.md) for the full license text.
 
 ## 🙏 Acknowledgments
 
-Built with love by [Sonny Sangha](https://www.youtube.com/@MilkyWay-y2k25) and the alexladwong community.
+Built with love by [ladwongalex Sangha](https://www.youtube.com/@MilkyWay-y2k25) and the alexladwong community.
 
 - [Next.js](https://nextjs.org/) - The React framework
-- [Sanity](https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) - Structured content platform 💛
+- [Sanity](https://www.sanity.io/ladwongalex?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) - Structured content platform 💛
 - [Clerk](https://go.clerk.com/84o4rVF) - Authentication and billing 💛
 - [Vercel](https://vercel.com/) - Deployment and AI gateway
 - [Mapbox](https://www.mapbox.com/) - Maps and geocoding
@@ -591,7 +591,7 @@ Built with love by [Sonny Sangha](https://www.youtube.com/@MilkyWay-y2k25) and t
 **Enjoyed this project?** Here's how you can help:
 
 1. ⭐ **Star this repo** - It helps others discover it
-2. 📺 **Subscribe** to [Sonny Sangha on YouTube](https://www.youtube.com/@MilkyWay-y2k25)
+2. 📺 **Subscribe** to [ladwongalex Sangha on YouTube](https://www.youtube.com/@MilkyWay-y2k25)
 3. 🔗 **Use the affiliate links** when signing up for services (no extra cost to you!)
 4. 📣 **Share** this project with fellow developers
 5. 🎓 **Join [alexladwong](https://ladwongportfolio.vercel.app/contact)** for more in-depth learning
