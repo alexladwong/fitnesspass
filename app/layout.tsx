@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     "fitness schedule",
     "workout classes",
   ],
+  
 
   robots: {
     index: true,
