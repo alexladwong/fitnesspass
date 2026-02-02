@@ -15,16 +15,35 @@ export type ProfileResult = {
   error?: string;
 };
 
+/**
+ * DB can return partial location (lat/lng/address missing).
+ * Keep this type aligned with what can actually exist.
+ */
 export type LocationData = {
-  lat: number;
-  lng: number;
-  address: string;
+  lat?: number;
+  lng?: number;
+  address?: string;
 };
 
 export type ProfilePreferences = {
-  location: LocationData;
-  searchRadius: number;
+  location?: LocationData;
+  searchRadius?: number;
 };
+
+// --- Helpers ---
+function isValidLocation(location?: LocationData): location is Required<LocationData> {
+  return Boolean(
+    location &&
+      typeof location.lat === "number" &&
+      typeof location.lng === "number" &&
+      typeof location.address === "string" &&
+      location.address.trim().length > 0
+  );
+}
+
+function isValidRadius(radius?: number): radius is number {
+  return typeof radius === "number" && Number.isFinite(radius) && radius >= 1;
+}
 
 // Complete onboarding - save preferences and set Clerk metadata
 export async function completeOnboarding(
@@ -39,11 +58,11 @@ export async function completeOnboarding(
 
     const { location, searchRadius } = preferences;
 
-    if (!location || !location.lat || !location.lng || !location.address) {
+    if (!isValidLocation(location)) {
       return { success: false, error: "Location is required" };
     }
 
-    if (!searchRadius || searchRadius < 1) {
+    if (!isValidRadius(searchRadius)) {
       return { success: false, error: "Search radius is required" };
     }
 
@@ -95,23 +114,20 @@ export async function updateLocationPreferences(
 
     const { location, searchRadius } = preferences;
 
-    if (!location || !location.lat || !location.lng || !location.address) {
+    if (!isValidLocation(location)) {
       return { success: false, error: "Location is required" };
     }
 
-    if (!searchRadius || searchRadius < 1) {
+    if (!isValidRadius(searchRadius)) {
       return { success: false, error: "Search radius is required" };
     }
 
     // Get user profile
-    const userProfile = await client.fetch(
-      USER_PROFILE_WITH_PREFERENCES_QUERY,
-      {
-        clerkId: userId,
-      }
-    );
+    const userProfile = await client.fetch(USER_PROFILE_WITH_PREFERENCES_QUERY, {
+      clerkId: userId,
+    });
 
-    if (!userProfile) {
+    if (!userProfile?._id) {
       return { success: false, error: "User profile not found" };
     }
 
@@ -140,26 +156,35 @@ export async function updateLocationPreferences(
 }
 
 // Get user's location preferences
-export async function getUserPreferences(): Promise<ProfilePreferences | null> {
+export async function getUserPreferences(): Promise<{
+  location: Required<LocationData>;
+  searchRadius: number;
+} | null> {
   try {
     const { userId } = await auth();
 
-    if (!userId) {
-      return null;
-    }
+    if (!userId) return null;
 
     const userProfile = await sanityFetch({
       query: USER_PROFILE_WITH_PREFERENCES_QUERY,
       params: { clerkId: userId },
     });
 
-    if (!userProfile.data?.location || !userProfile.data?.searchRadius) {
+    const location = userProfile.data?.location as LocationData | undefined;
+    const searchRadius = userProfile.data?.searchRadius as number | undefined;
+
+    // Return null until user completes onboarding/preferences
+    if (!isValidLocation(location) || !isValidRadius(searchRadius)) {
       return null;
     }
 
     return {
-      location: userProfile.data.location,
-      searchRadius: userProfile.data.searchRadius,
+      location: {
+        lat: location.lat,
+        lng: location.lng,
+        address: location.address,
+      },
+      searchRadius,
     };
   } catch (error) {
     console.error("Get preferences error:", error);
