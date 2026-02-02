@@ -68,7 +68,7 @@ Before diving into the code, you'll need accounts with these services.
 | **Mapbox** | Address Autocomplete | [Sign up for Mapbox](https://account.mapbox.com/) |
 | **Vercel** | Hosting & AI Gateway | [Sign up for Vercel](https://vercel.com/) |
 
-> 📦 **Want the source code?** [Get it here](https://www.papareact.com/class-booking-platform-build-form)
+> 📦 **Want the source code?** [Get it here](https://www..com/class-booking-platform-build-form)
 
 **Why use these links?**
 - ✅ Same pricing as going direct (no extra cost to you)
@@ -102,9 +102,9 @@ All plans include a **3-day free trial** — no commitment, cancel anytime.
 
 ---
 
-## 🚀 Before We Dive In - Join the PAPAFAM!
+## 🚀 Before We Dive In - Join the alexladwong!
 
-**Want to build apps like this from scratch?** Join thousands of developers who've leveled up their skills with PAPAFAM!
+**Want to build apps like this from scratch?** Join thousands of developers who've leveled up their skills with alexladwong!
 
 ### What You'll Master
 
@@ -116,7 +116,7 @@ All plans include a **3-day free trial** — no commitment, cancel anytime.
 - ✅ Modern UI with shadcn/ui + Tailwind CSS
 - ✅ Production deployment on Vercel
 
-### The PAPAFAM Community
+### The alexladwong Community
 
 - 💬 Private Discord community
 - 🎥 Step-by-step video tutorials
@@ -126,9 +126,9 @@ All plans include a **3-day free trial** — no commitment, cancel anytime.
 
 ### Real Results
 
-> "I went from zero to landing my first dev job in 6 months following Sonny's tutorials!" - PAPAFAM Graduate
+> "I went from zero to landing my first dev job in 6 months following Sonny's tutorials!" - alexladwong Graduate
 
-👉 **[Join the PAPAFAM Course](https://www.papareact.com/course)**
+👉 **[Join the alexladwong Course](https://www..com/course)**
 
 ---
 
@@ -529,7 +529,7 @@ This project is licensed under the **Creative Commons Attribution-NonCommercial 
 - ❌ Sell this code or derivatives
 - ❌ Remove attribution/credits
 
-For commercial licensing inquiries, contact via [PAPAREACT](https://www.papareact.com/).
+For commercial licensing inquiries, contact via [](https://ladwongportfolio.vercel.app/contact).
 
 See [LICENSE.md](LICENSE.md) for the full license text.
 
@@ -576,7 +576,7 @@ See [LICENSE.md](LICENSE.md) for the full license text.
 
 ## 🙏 Acknowledgments
 
-Built with love by [Sonny Sangha](https://www.youtube.com/@SonnySangha) and the PAPAFAM community.
+Built with love by [Sonny Sangha](https://www.youtube.com/@MilkyWay-y2k25) and the alexladwong community.
 
 - [Next.js](https://nextjs.org/) - The React framework
 - [Sanity](https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=class-booking-platform) - Structured content platform 💛
@@ -592,10 +592,10 @@ Built with love by [Sonny Sangha](https://www.youtube.com/@SonnySangha) and the 
 **Enjoyed this project?** Here's how you can help:
 
 1. ⭐ **Star this repo** - It helps others discover it
-2. 📺 **Subscribe** to [Sonny Sangha on YouTube](https://www.youtube.com/@SonnySangha)
+2. 📺 **Subscribe** to [Sonny Sangha on YouTube](https://www.youtube.com/@MilkyWay-y2k25)
 3. 🔗 **Use the affiliate links** when signing up for services (no extra cost to you!)
 4. 📣 **Share** this project with fellow developers
-5. 🎓 **Join [PAPAFAM](https://www.papareact.com/course)** for more in-depth learning
+5. 🎓 **Join [alexladwong](https://ladwongportfolio.vercel.app/contact)** for more in-depth learning
 
 Every little bit helps me continue creating free educational content for the developer community. Thank you! 🙏
 
